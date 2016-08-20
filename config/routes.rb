@@ -61,4 +61,11 @@ Rails.application.routes.draw do
     root 'welcome#index'
   end
 
+  Rails.application.routes.draw do
+
+    resources :articles
+
+    root 'welcome#index'
+  end
+
 end
